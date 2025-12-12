@@ -1,6 +1,9 @@
 # Arduino Turbidity-Based Water Drainage System
 
-Automatically drains **clear water** from a storage tank based on real-time turbidity sensor readings. Designed for field use in household water management systems.
+Automatically drains **clear water** from a storage tank based on real-time turbidity sensor readings. Designed for field use in household water management systems. 
+In this project, the need for a clear water filter or what will be discarded is clear water. Therefore, if you want to use this source, you must change the state machine section "MEGURATION" change the logic to "<" for the operation to clear water.
+And the determination of the numbers in the variables is based on the results of measurements in my lab, not in the field, so there is a possibility of changing in the field. Yes, because I did not calibrate to 0, I only read the ADC value directly by comparing it with the desired water conditions. This does seem a bit confusing, but this is a method if you do not have fluid for calibration.
+**Remember!!!** This method is not to be imitated in the scientific writing process because there is no calibration here.
 
 ## 🌟 Features
 - ✅ **2-second confirmation** before pump activation (avoids false triggers)
