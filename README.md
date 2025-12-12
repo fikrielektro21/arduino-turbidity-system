@@ -1,7 +1,7 @@
 # Arduino Turbidity-Based Water Drainage System
 
 Automatically drains **clear water** from a storage tank based on real-time turbidity sensor readings. Designed for field use in household water management systems. 
-In this project, the need for a clear water filter or what will be discarded is clear water. Therefore, if you want to use this source, you must change the state machine section "MEGURASI" change the logic to "<" for the operation to clear water.
+In this project, the need for a clear water filter or what will be discarded is clear water. Therefore, if you want to use this source, you must change the state machine section "MENGURASI" change the logic to "<" for the operation to clear water.
 And the determination of the numbers in the variables is based on the results of measurements in my lab, not in the field, so there is a possibility of changing in the field. Yes, because I did not calibrate to 0, I only read the ADC value directly by comparing it with the desired water conditions. This does seem a bit confusing, but this is a method if you do not have fluid for calibration.
 **Remember!!!** This method is not to be imitated in the scientific writing process because there is no calibration here.
 
@@ -16,10 +16,10 @@ And the determination of the numbers in the variables is based on the results of
 
 ## 🧰 Hardware Used
 - **Microcontroller**: Arduino Nano
-- **Sensor**: Analog Turbidity Sensor (e.g., SEN0189 or compatible)
-- **Actuator**: 5V Relay Module + opto pc817 (active LOW)
-- **Display**: LCD 16x2 with I2C Backpack (address `0x27` or `0x3F`)
-- **Power**: 5V regulated supply (e.g., LM2596 from 12V SMPS)
+- **Sensor**: Analog Turbidity Sensor (e.g., SEN0189 or compatible) https://share.google/KoyhsTsTZ1xjH7zKy
+- **Actuator**: 5V Relay Module + opto pc817 (active LOW) https://share.google/MdFoHZ9gB2fQCH2jA
+- **Display**: LCD 16x2 with I2C Backpack (address `0x27` or `0x3F`) https://share.google/1XS4DpJi7etgQmaFK
+- **Power**: 5V regulated supply (e.g., LM2596 from 12V SMPS) https://share.google/D3ReLLn5qp7iZkWeH | https://share.google/2aIWy9NJLImbFmbCs
 
 ## ⚙️ Key Logic
 - **Air jernih**: ADC ≥ 700 → after 2s confirmation → pump ON for 5 minutes
