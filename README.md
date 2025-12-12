@@ -14,7 +14,7 @@ Automatically drains **clear water** from a storage tank based on real-time turb
 ## 🧰 Hardware Used
 - **Microcontroller**: Arduino Nano
 - **Sensor**: Analog Turbidity Sensor (e.g., SEN0189 or compatible)
-- **Actuator**: 5V Relay Module (active LOW)
+- **Actuator**: 5V Relay Module + opto pc817 (active LOW)
 - **Display**: LCD 16x2 with I2C Backpack (address `0x27` or `0x3F`)
 - **Power**: 5V regulated supply (e.g., LM2596 from 12V SMPS)
 
