@@ -1,7 +1,7 @@
 # Arduino NANO & MEGA 
 This is for the case of a tank that is far from the main panel, I use an Arduino Mega on the main panel with additional RS485 Communication to read and send data. The Arduino Mega's task is to display the read turbidity value sent via RS485 communication and also to control the relay connected to the AC pump. Remember to use a relay + opocoupler / optoisolator to protect the Arduino from starting surges in the AC pump. The Arduino Nano's task is to read the turbidity sensor using (AnalogRead) and send it to the Arduino Mega via RS485. Since the Arduino Nano only has 1 UART register, I use softwareserial to use RS485 communication on the NANO side.
 
-[Shematic][)
+[Shematic](circuit_image (4).png)
 
 # Arduino NANO Turbidity
 
